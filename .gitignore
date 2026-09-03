@@ -1,0 +1,51 @@
+# Binaries
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+# Test binary, built with `go test -c`
+*.test
+# Output of `go tool cover`
+*.out
+coverage.*
+# Go workspace file
+go.work
+go.work.sum
+# Dependency vendor dir (uncomment if you don't vendor)
+# vendor/
+
+# Secrets — NEVER commit a private key, mnemonic or RPC key
+.env
+.env.*
+*.local
+*.key
+keystore/
+wallet.dat
+mnemonic.txt
+
+# Chain data / build output from the from-scratch chain
+*.db
+blockchain.db
+chaindata/
+node*/data/
+
+# Solidity / Foundry
+out/
+cache/
+broadcast/
+artifacts/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Scratch
+/tmp
+
+# Your exercise answers stay local; the folder's bones are tracked
+/practice/*
+!/practice/README.md
+!/practice/go.mod
