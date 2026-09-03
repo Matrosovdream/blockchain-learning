@@ -4,15 +4,24 @@ My notes and practice for learning blockchain engineering from scratch — **eve
 
 ## The lessons
 
-41 lessons in [learning-plan/](learning-plan/), numbered 01 to 41, strictly easy → hard. They run from
-what a ledger is, through the cryptography (hashes, Merkle trees, ECDSA, HD wallets), into **building a
-working blockchain from scratch in Go** (blocks, mining, UTXO transactions, a wallet, persistence, P2P,
-fork choice), then Ethereum and the EVM, smart-contract interaction from Go, consensus and L2s, and
-finally the production side — indexers, key management, node ops, testing and observability.
+**68 lessons** in [learning-plan/](learning-plan/), numbered 01 to 68, strictly easy → hard.
+
+- **01 → 41 is the spine**, taken in order: what a ledger is → cryptography (hashes, Merkle trees, ECDSA,
+  HD wallets) → **building a working blockchain from scratch in Go** (blocks, mining, UTXO, wallet,
+  persistence, P2P, fork choice) → Ethereum and the EVM (including writing your own interpreter) →
+  smart-contract interaction from Go → consensus and L2s → production engineering (indexers, key
+  management, node ops, testing, observability) → Bitcoin, Cosmos, Solana, ZK, DeFi → a capstone.
+- **42 → 68 are extensions**, taken in any order once their prerequisites are met: deeper cryptography
+  (Schnorr/BLS, MPC, encryption at rest), smart contracts in depth (gas optimization, proxies, account
+  abstraction, Foundry, the wider token standards), identity and dApp backends (SIWE, wallets, ENS,
+  oracles), chain data at scale (mempool, IPFS, ETL, performance), custody and compliance (deposits,
+  withdrawals, double-entry ledgers, AML), protocol internals (reading go-ethereum, private networks,
+  light clients, precompiles, Verkle), and cross-chain plus production operations.
 
 Each lesson is one markdown file with heavy prose explanations, exercises, pitfalls and a checklist.
 Most lessons also get a set of small runnable Go programs under
 [learning-plan/examples/](learning-plan/examples/), graded 🟢 easy → 🟡 medium → 🔴 hard.
+**1072 examples** are planned across the course.
 
 Where I'm at is tracked in [learning-plan/PROGRESS.md](learning-plan/PROGRESS.md).
 
@@ -32,11 +41,17 @@ Where I'm at is tracked in [learning-plan/PROGRESS.md](learning-plan/PROGRESS.md
 
 ## Building the course
 
-Nothing is written yet — the repo currently holds the structure, 41 lesson stubs, and the plan.
+Nothing is written yet — the repo holds the structure, 68 lesson stubs, and the full plan.
 
-[learning-plan/PLAN.md](learning-plan/PLAN.md) is the authoring spec: for every lesson it lists the
-exact topics to cover, the example seeds, the prerequisites and the Go packages involved. Ask Claude to
-write the next lesson from it, or to append more examples to an existing tier file.
+- [learning-plan/PLAN.md](learning-plan/PLAN.md) — the authoring spec: conventions, writing rules, and
+  **how to extend the course** (add examples, topics, lessons or whole parts).
+- [learning-plan/plan/](learning-plan/plan/) — one spec file per part, holding every lesson's goals,
+  numbered topics with sub-points, pitfalls to cover, tiered example seeds, packages and resources.
+  **633 topics with 2623 sub-points** are specified.
+- [learning-plan/plan/backlog.md](learning-plan/plan/backlog.md) — unscheduled ideas, and the ones
+  deliberately rejected.
+
+Ask Claude to write the next lesson from its spec, or to append more examples to an existing tier file.
 
 ## Safety rules for this repo
 
