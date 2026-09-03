@@ -4,7 +4,11 @@
 
 ## Current step
 
-**→ 01 — Introduction to Blockchain.** Nothing is written yet: the repo currently holds the structure, the [plan](PLAN.md) and 68 lesson stubs.
+**→ 01 — Introduction to Blockchain** — written and ready to work through.
+
+[Lesson 01](01-introduction.md) is complete (9 concept sections) and its [12 examples](examples/01-introduction/) are built, run and verified. Read it, retype the examples, then do the exercises in `practice/01-introduction/`.
+
+Lessons 02–68 are still stubs; each links to its full spec in [plan/](plan/).
 
 ## Legend
 
@@ -14,7 +18,7 @@
 
 | # | Step | Lesson | Examples | Notes |
 |---|------|--------|----------|-------|
-| 01 | [Introduction to Blockchain](01-introduction.md) | ☐ | 0 / 12 | |
+| 01 | [Introduction to Blockchain](01-introduction.md) | ☐ | 0 / 12 | ✍️ lesson written, 12 examples ready |
 | 02 | [Environment Setup & Tooling](02-environment-setup.md) | ☐ | 0 / 12 | |
 | 03 | [Bytes, Hex, Big Integers & Encoding](03-bytes-encoding.md) | ☐ | 0 / 18 | |
 
