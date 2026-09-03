@@ -43,4 +43,4 @@ Every example must be `go build`-, `go vet`- and `gofmt`-clean, and **run before
 the **Output** block under each one is real stdout, not a guess.
 
 ---
-*The full spec for what each lesson's examples should cover is in [../PLAN.md](../PLAN.md).*
+*Each lesson's example seeds and tier targets are in its part spec under [../plan/](../plan/); the rules are in [../PLAN.md](../PLAN.md).*

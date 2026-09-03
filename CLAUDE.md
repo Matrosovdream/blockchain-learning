@@ -1,16 +1,19 @@
 # blockchain-learning — working notes for Claude
 
-A course repo: 41 blockchain lessons, **all examples in Go**, beginner → production.
+A course repo: **68 blockchain lessons, all examples in Go**, beginner → production.
+Nothing is written yet; the repo holds the structure, the plan and 68 stubs.
 
 ## Layout
 
 | Path | What it is |
 |---|---|
-| [learning-plan/README.md](learning-plan/README.md) | reader-facing index of all 41 lessons |
-| [learning-plan/PLAN.md](learning-plan/PLAN.md) | **the authoring spec** — per-lesson topics, example seeds, prereqs, packages |
-| [learning-plan/PROGRESS.md](learning-plan/PROGRESS.md) | what's written and what the user has finished |
-| `learning-plan/NN-slug.md` | one lesson each; currently stubs |
-| `learning-plan/examples/NN-slug/` | runnable Go programs per lesson, `1-easy` / `2-medium` / `3-hard` |
+| [learning-plan/README.md](learning-plan/README.md) | reader-facing index of all 68 lessons |
+| [learning-plan/PLAN.md](learning-plan/PLAN.md) | authoring conventions + **how to extend the course** |
+| [learning-plan/plan/](learning-plan/plan/) | **the per-lesson spec**, one file per part — topics, sub-points, pitfalls, example seeds |
+| [learning-plan/plan/backlog.md](learning-plan/plan/backlog.md) | unscheduled and rejected topics |
+| [learning-plan/PROGRESS.md](learning-plan/PROGRESS.md) | what's written, and what the user has finished |
+| `learning-plan/NN-slug.md` | one lesson each; currently stubs with the section skeleton pre-filled |
+| `learning-plan/examples/NN-slug/` | runnable Go programs per lesson: `1-easy` / `2-medium` / `3-hard` |
 | `learning-plan/examples/_template/` | copy this to start a lesson's examples |
 | `learning-plan/cheatsheets/` | dense reference sheets, written after their lessons |
 | `practice/` | the user's exercise answers (gitignored except its bones) |
@@ -18,14 +21,21 @@ A course repo: 41 blockchain lessons, **all examples in Go**, beginner → produ
 
 ## When asked to write a lesson
 
-1. Read its entry in [PLAN.md](learning-plan/PLAN.md) — it defines the scope. Don't improvise the topic list.
+1. **Read its spec first** — the stub links to it (`plan/part-NN-*.md#nn--title`). It defines the goals,
+   the numbered topic list with sub-points, the pitfalls, and the example seeds. Don't improvise the scope.
 2. Keep the fixed section order: Goals → Concepts → Exercises → Best Practices & Pitfalls → Checklist → Resources.
-3. `## Concepts` is the bulk of the file: one `###` per PLAN topic, **prose first** (what problem, what
-   breaks without it), then a short Go snippet. This course is explanation-heavy by design.
-4. Name the real incident when one exists (the DAO, PS3 nonce reuse, Parity's uninitialized library).
-5. Cross-link prerequisites with a relative link to the prerequisite lesson file, e.g. lesson 09 links back to `08-blocks-and-chain.md`.
-6. Then build `examples/NN-slug/` from the template, expanding the PLAN's example seeds to the target count.
-7. Update the lesson row in PROGRESS.md.
+3. `## Concepts` is the bulk of the file: one `###` per spec topic, in order, **covering every sub-point**.
+   Prose first (what problem, what breaks without it), then a short Go snippet.
+4. Name the real incident when one exists (the DAO, Parity, PS3 nonce reuse, Ronin, Nomad).
+5. Cross-link prerequisites with a relative link to the prerequisite lesson file.
+6. Then build `examples/NN-slug/` from the template, expanding the spec's seeds to the tier counts.
+7. Update the lesson's row in PROGRESS.md.
+
+## When asked to extend the course
+
+Follow the checklist in [PLAN.md § Extending the course](learning-plan/PLAN.md). The short version:
+numbers are never reused or renumbered; a new lesson needs a spec entry, a stub, a README line and a
+PROGRESS row; ideas without a number go in the backlog with a reason.
 
 ## Non-negotiables for code in this repo
 
