@@ -4,9 +4,9 @@
 
 ## Current step
 
-**→ 02 — Environment Setup & Tooling** — written and ready to work through.
+**→ 03 — Bytes, Hex, Big Integers & Encoding** — written and ready to work through.
 
-[Lesson 01](01-introduction.md) (9 sections, [12 examples](examples/01-introduction/)) and [lesson 02](02-environment-setup.md) (8 sections, [12 examples](examples/02-environment-setup/)) are complete — built, run and verified. Lesson 02's examples start a chain in-process, so they run with nothing installed.
+Lessons [01](01-introduction.md) (9 sections, [12 examples](examples/01-introduction/)), [02](02-environment-setup.md) (8 sections, [12 examples](examples/02-environment-setup/)) and [03](03-bytes-encoding.md) (9 sections, [18 examples](examples/03-bytes-encoding/)) are complete — built, run and verified. Lesson 02's examples start a chain in-process, so they run with nothing installed; lesson 03's need no chain at all.
 
 Lessons 02–68 are still stubs; each links to its full spec in [plan/](plan/).
 
@@ -20,7 +20,7 @@ Lessons 02–68 are still stubs; each links to its full spec in [plan/](plan/).
 |---|------|--------|----------|-------|
 | 01 | [Introduction to Blockchain](01-introduction.md) | ☐ | 0 / 12 | ✍️ lesson written, 12 examples ready |
 | 02 | [Environment Setup & Tooling](02-environment-setup.md) | ☐ | 0 / 12 | ✍️ lesson written, 12 examples ready |
-| 03 | [Bytes, Hex, Big Integers & Encoding](03-bytes-encoding.md) | ☐ | 0 / 18 | |
+| 03 | [Bytes, Hex, Big Integers & Encoding](03-bytes-encoding.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 
 ## Part 2 — Cryptography Foundations
 
