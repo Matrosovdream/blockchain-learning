@@ -4,9 +4,11 @@
 
 ## Current step
 
-**→ 03 — Bytes, Hex, Big Integers & Encoding** — written and ready to work through.
+**→ 04 — Cryptographic Hash Functions** — written and ready to work through.
 
-Lessons [01](01-introduction.md) (9 sections, [12 examples](examples/01-introduction/)), [02](02-environment-setup.md) (8 sections, [12 examples](examples/02-environment-setup/)) and [03](03-bytes-encoding.md) (9 sections, [18 examples](examples/03-bytes-encoding/)) are complete — built, run and verified. Lesson 02's examples start a chain in-process, so they run with nothing installed; lesson 03's need no chain at all.
+**Part 1 is complete.** Lessons [01](01-introduction.md) (12 examples), [02](02-environment-setup.md) (12), [03](03-bytes-encoding.md) (18) and [04](04-hash-functions.md) (20) are written — built, run and verified: **62 examples** so far.
+
+Lesson 02's examples start a chain in-process, so they run with nothing installed. Lessons 03 and 04 need no chain at all.
 
 Lessons 02–68 are still stubs; each links to its full spec in [plan/](plan/).
 
@@ -26,7 +28,7 @@ Lessons 02–68 are still stubs; each links to its full spec in [plan/](plan/).
 
 | # | Step | Lesson | Examples | Notes |
 |---|------|--------|----------|-------|
-| 04 | [Cryptographic Hash Functions](04-hash-functions.md) | ☐ | 0 / 20 | |
+| 04 | [Cryptographic Hash Functions](04-hash-functions.md) | ☐ | 0 / 20 | ✍️ lesson written, 20 examples ready |
 | 05 | [Merkle Trees & Proofs](05-merkle-trees.md) | ☐ | 0 / 18 | |
 | 06 | [Keys & Digital Signatures (ECDSA on secp256k1)](06-keys-signatures.md) | ☐ | 0 / 18 | |
 | 07 | [Addresses, Encodings & HD Wallets](07-addresses-wallets-hd.md) | ☐ | 0 / 18 | |
