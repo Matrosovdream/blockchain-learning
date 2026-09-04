@@ -39,8 +39,6 @@ artifacts/
 # Editor / OS
 .DS_Store
 .idea/
-.vscode/*
-!.vscode/extensions.json
 
 # Scratch
 /tmp
@@ -49,3 +47,7 @@ artifacts/
 /practice/*
 !/practice/README.md
 !/practice/go.mod
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
