@@ -4,9 +4,11 @@
 
 ## Current step
 
-**→ 06 — Keys & Digital Signatures** — written and ready to work through.
+**→ 08 — Blocks & the Chain** (Part 3 begins). Lessons 01–07 are written.
 
-**Part 1 is complete**, and Part 2 is three quarters done. Lessons [01](01-introduction.md) (12 examples), [02](02-environment-setup.md) (12), [03](03-bytes-encoding.md) (18), [04](04-hash-functions.md) (20), [05](05-merkle-trees.md) (18) and [06](06-keys-signatures.md) (18) are written — built, run and verified: **98 examples** so far.
+**Parts 1 and 2 are complete.** Lessons [01](01-introduction.md) (12 examples), [02](02-environment-setup.md) (12), [03](03-bytes-encoding.md) (18), [04](04-hash-functions.md) (20), [05](05-merkle-trees.md) (18), [06](06-keys-signatures.md) (18) and [07](07-addresses-wallets-hd.md) (18) are written — built, run and verified: **116 examples** so far.
+
+Next is **Part 3**, where one Go program grows across eight lessons into a working blockchain.
 
 Lesson 02's examples start a chain in-process, so they run with nothing installed. Lessons 03 and 04 need no chain at all.
 
@@ -31,7 +33,7 @@ Lessons 02–68 are still stubs; each links to its full spec in [plan/](plan/).
 | 04 | [Cryptographic Hash Functions](04-hash-functions.md) | ☐ | 0 / 20 | ✍️ lesson written, 20 examples ready |
 | 05 | [Merkle Trees & Proofs](05-merkle-trees.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 | 06 | [Keys & Digital Signatures (ECDSA on secp256k1)](06-keys-signatures.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
-| 07 | [Addresses, Encodings & HD Wallets](07-addresses-wallets-hd.md) | ☐ | 0 / 18 | |
+| 07 | [Addresses, Encodings & HD Wallets](07-addresses-wallets-hd.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 
 ## Part 3 — Build a Blockchain from Scratch (Go)
 
