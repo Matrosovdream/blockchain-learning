@@ -4,11 +4,11 @@
 
 ## Current step
 
-**→ 08 — Blocks & the Chain** (Part 3 begins). Lessons 01–07 are written.
+**→ 09 — Proof of Work & Mining.** Lessons 01–08 are written.
 
-**Parts 1 and 2 are complete.** Lessons [01](01-introduction.md) (12 examples), [02](02-environment-setup.md) (12), [03](03-bytes-encoding.md) (18), [04](04-hash-functions.md) (20), [05](05-merkle-trees.md) (18), [06](06-keys-signatures.md) (18) and [07](07-addresses-wallets-hd.md) (18) are written — built, run and verified: **116 examples** so far.
+**Parts 1 and 2 are complete**, and **Part 3 has begun**. Lessons [01](01-introduction.md) (12 examples), [02](02-environment-setup.md) (12), [03](03-bytes-encoding.md) (18), [04](04-hash-functions.md) (20), [05](05-merkle-trees.md) (18), [06](06-keys-signatures.md) (18), [07](07-addresses-wallets-hd.md) (18) and [08](08-blocks-and-chain.md) (18) are written — built, run and verified: **134 examples** so far.
 
-Next is **Part 3**, where one Go program grows across eight lessons into a working blockchain.
+In Part 3 one Go program grows across eight lessons into a working blockchain. Lesson 08's [example 18](examples/08-blocks-and-chain/3-hard.md) is that program's first version.
 
 Lesson 02's examples start a chain in-process, so they run with nothing installed. Lessons 03 and 04 need no chain at all.
 
@@ -39,7 +39,7 @@ Lessons 02–68 are still stubs; each links to its full spec in [plan/](plan/).
 
 | # | Step | Lesson | Examples | Notes |
 |---|------|--------|----------|-------|
-| 08 | [Blocks & the Chain](08-blocks-and-chain.md) | ☐ | 0 / 18 | |
+| 08 | [Blocks & the Chain](08-blocks-and-chain.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 | 09 | [Proof of Work & Mining](09-proof-of-work.md) | ☐ | 0 / 18 | |
 | 10 | [Transactions & the UTXO Model](10-transactions-utxo.md) | ☐ | 0 / 18 | |
 | 11 | [Wallets, Fees & the Mempool](11-wallets-mempool.md) | ☐ | 0 / 18 | |
