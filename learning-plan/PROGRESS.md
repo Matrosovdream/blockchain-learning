@@ -4,9 +4,9 @@
 
 ## Current step
 
-**→ 11 — Wallets, Fees & the Mempool.** Lessons 01–10 are written.
+**→ 12 — Persistence & Chain State.** Lessons 01–11 are written.
 
-**Parts 1 and 2 are complete**, and **Part 3 has begun**. Lessons [01](01-introduction.md) (12 examples), [02](02-environment-setup.md) (12), [03](03-bytes-encoding.md) (18), [04](04-hash-functions.md) (20), [05](05-merkle-trees.md) (18), [06](06-keys-signatures.md) (18), [07](07-addresses-wallets-hd.md) (18), [08](08-blocks-and-chain.md) (18), [09](09-proof-of-work.md) (18) and [10](10-transactions-utxo.md) (18) are written — built, run and verified: **170 examples** so far.
+**Parts 1 and 2 are complete**, and **Part 3 has begun**. Lessons [01](01-introduction.md) (12 examples), [02](02-environment-setup.md) (12), [03](03-bytes-encoding.md) (18), [04](04-hash-functions.md) (20), [05](05-merkle-trees.md) (18), [06](06-keys-signatures.md) (18), [07](07-addresses-wallets-hd.md) (18), [08](08-blocks-and-chain.md) (18), [09](09-proof-of-work.md) (18), [10](10-transactions-utxo.md) (18) and [11](11-wallets-mempool.md) (18) are written — built, run and verified: **188 examples** so far.
 
 In Part 3 one Go program grows across eight lessons into a working blockchain. Lesson 08's [example 18](examples/08-blocks-and-chain/3-hard.md) is that program's first version.
 
@@ -42,7 +42,7 @@ Lessons 02–68 are still stubs; each links to its full spec in [plan/](plan/).
 | 08 | [Blocks & the Chain](08-blocks-and-chain.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 | 09 | [Proof of Work & Mining](09-proof-of-work.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 | 10 | [Transactions & the UTXO Model](10-transactions-utxo.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
-| 11 | [Wallets, Fees & the Mempool](11-wallets-mempool.md) | ☐ | 0 / 18 | |
+| 11 | [Wallets, Fees & the Mempool](11-wallets-mempool.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 | 12 | [Persistence & Chain State](12-persistence-chainstate.md) | ☐ | 0 / 18 | |
 | 13 | [P2P Networking & Gossip](13-p2p-networking.md) | ☐ | 0 / 18 | |
 | 14 | [Consensus, Forks & Reorgs](14-consensus-forks.md) | ☐ | 0 / 18 | |
