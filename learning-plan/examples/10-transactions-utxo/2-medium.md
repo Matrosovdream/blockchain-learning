@@ -1985,12 +1985,15 @@ type Delta struct {
 	Create map[Outpoint]TxOutput
 }
 
+// Apply inserts FIRST, then deletes. An output that a block both creates and
+// spends appears in Create and in Spend; deleting first would put it back and
+// mint money from nothing.
 func (s UTXOSet) Apply(d Delta) {
-	for _, op := range d.Spend {
-		delete(s, op)
-	}
 	for op, o := range d.Create {
 		s[op] = o
+	}
+	for _, op := range d.Spend {
+		delete(s, op)
 	}
 }
 
@@ -2137,9 +2140,13 @@ func main() {
 		d := BlockDelta(b)
 
 		// Remember what we are about to delete, so the block can be reverted.
+		// Only outputs that were already in the set: one created and spent
+		// inside this same block is undone by dropping it, not by restoring it.
 		spent := map[Outpoint]TxOutput{}
 		for _, op := range d.Spend {
-			spent[op] = set[op]
+			if o, ok := set[op]; ok {
+				spent[op] = o
+			}
 		}
 		spentHistory = append(spentHistory, spent)
 
@@ -2374,12 +2381,15 @@ type Delta struct {
 	Create map[Outpoint]TxOutput
 }
 
+// Apply inserts FIRST, then deletes. An output that a block both creates and
+// spends appears in Create and in Spend; deleting first would put it back and
+// mint money from nothing.
 func (s UTXOSet) Apply(d Delta) {
-	for _, op := range d.Spend {
-		delete(s, op)
-	}
 	for op, o := range d.Create {
 		s[op] = o
+	}
+	for _, op := range d.Spend {
+		delete(s, op)
 	}
 }
 

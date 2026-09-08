@@ -1842,12 +1842,15 @@ type Delta struct {
 	Create map[Outpoint]Entry
 }
 
+// Apply inserts FIRST, then deletes. An output that a block both creates and
+// spends appears in Create and in Spend; deleting first would put it back and
+// mint money from nothing.
 func (s UTXOSet) Apply(d Delta) {
-	for _, op := range d.Spend {
-		delete(s, op)
-	}
 	for op, e := range d.Create {
 		s[op] = e
+	}
+	for _, op := range d.Spend {
+		delete(s, op)
 	}
 }
 

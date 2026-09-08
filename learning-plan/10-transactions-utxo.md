@@ -446,7 +446,7 @@ type Entry struct {
 }
 ```
 
-Applying a block is **one delta**: delete the spent outpoints, insert the new outputs. Build the
+Applying a block is **one delta**: insert the new outputs, then delete the spent outpoints. Build the
 delta first and apply it only if the whole block validates — the same validate-then-mutate rule as
 lesson 08's `Append`, one level up.
 
@@ -456,9 +456,11 @@ type Delta struct {
     Create map[Outpoint]Entry
 }
 
+// Insert first, then delete: an output a block both creates and spends is in
+// Create AND in Spend, and deleting first would put it back.
 func (s UTXOSet) Apply(d Delta) {
-    for _, op := range d.Spend { delete(s, op) }
     for op, e := range d.Create { s[op] = e }
+    for _, op := range d.Spend { delete(s, op) }
 }
 ```
 
