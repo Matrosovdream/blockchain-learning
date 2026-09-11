@@ -4,11 +4,11 @@
 
 ## Current step
 
-**→ 12 — Persistence & Chain State.** Lessons 01–11 are written.
+**→ 13 — P2P Networking & Gossip.** Lessons 01–12 are written.
 
-**Parts 1 and 2 are complete**, and **Part 3 has begun**. Lessons [01](01-introduction.md) (12 examples), [02](02-environment-setup.md) (12), [03](03-bytes-encoding.md) (18), [04](04-hash-functions.md) (20), [05](05-merkle-trees.md) (18), [06](06-keys-signatures.md) (18), [07](07-addresses-wallets-hd.md) (18), [08](08-blocks-and-chain.md) (18), [09](09-proof-of-work.md) (18), [10](10-transactions-utxo.md) (18) and [11](11-wallets-mempool.md) (18) are written — built, run and verified: **188 examples** so far.
+**Parts 1 and 2 are complete**, and **Part 3 is past halfway**. Lessons [01](01-introduction.md) (12 examples), [02](02-environment-setup.md) (12), [03](03-bytes-encoding.md) (18), [04](04-hash-functions.md) (20), [05](05-merkle-trees.md) (18), [06](06-keys-signatures.md) (18), [07](07-addresses-wallets-hd.md) (18), [08](08-blocks-and-chain.md) (18), [09](09-proof-of-work.md) (18), [10](10-transactions-utxo.md) (18), [11](11-wallets-mempool.md) (18) and [12](12-persistence-chainstate.md) (18) are written — built, run and verified: **206 examples** so far.
 
-In Part 3 one Go program grows across eight lessons into a working blockchain. Lesson 08's [example 18](examples/08-blocks-and-chain/3-hard.md) is that program's first version.
+In Part 3 one Go program grows across eight lessons into a working blockchain. Lesson 08's [example 18](examples/08-blocks-and-chain/3-hard.md) is that program's first version; lesson 12's [example 18](examples/12-persistence-chainstate/3-hard.md#18-the-chain-on-disk) puts it on disk.
 
 Lesson 02's examples start a chain in-process, so they run with nothing installed. Lessons 03 and 04 need no chain at all.
 
@@ -43,7 +43,7 @@ Lessons 02–68 are still stubs; each links to its full spec in [plan/](plan/).
 | 09 | [Proof of Work & Mining](09-proof-of-work.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 | 10 | [Transactions & the UTXO Model](10-transactions-utxo.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 | 11 | [Wallets, Fees & the Mempool](11-wallets-mempool.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
-| 12 | [Persistence & Chain State](12-persistence-chainstate.md) | ☐ | 0 / 18 | |
+| 12 | [Persistence & Chain State](12-persistence-chainstate.md) | ☐ | 0 / 18 | ✍️ lesson written, 18 examples ready |
 | 13 | [P2P Networking & Gossip](13-p2p-networking.md) | ☐ | 0 / 18 | |
 | 14 | [Consensus, Forks & Reorgs](14-consensus-forks.md) | ☐ | 0 / 18 | |
 | 15 | [The Account Model & World State](15-account-model-state.md) | ☐ | 0 / 18 | |
